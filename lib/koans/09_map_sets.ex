@@ -26,7 +26,7 @@ defmodule MapSets do
   koan "You cannot depend on my order" do
     new_set = MapSet.new(1..33)
     assert sorted?(new_set) == false
-
+    
     # Note: The number "33" is actually special here. Erlang uses a different
     # implementation for maps after 32 elements which does not maintain order.
     # http://stackoverflow.com/a/40408469
